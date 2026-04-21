@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=36.2"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "nbdev-hello-world"
+version = "0.0.1"
+description = ""
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.7"
+authors = [{name = "DrD", email = "38837568+mlfisch3@users.noreply.github.com"}]
+keywords = ["nbdev", "jupyter", "notebook", "python"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = []
+
+[tool.setuptools.packages.find]
+where = ["."]
